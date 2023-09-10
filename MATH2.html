@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="MATHstyle.css">
+    <title>GCD Calculator 2 </title>
+    <style>
+        body {
+            font-family: 'Mitr', sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 25px;
+            box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+        }
+        button {
+            background-color: #007acb; /* สีน้ำเงินอ่อน (มนๆ) */
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 100px
+        }
+
+        input[type="number"] {
+            width: 200px; /* กำหนดขนาดกล่องข้อความ */
+            padding: 5px;
+            font-size: 16px;
+            margin: auto;
+        }
+
+        #result {
+            color: white; /* เปลี่ยนสีแสดงผลเป็นสีขาว*/
+            font-size: 40px;
+            background-color: #22ca04;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 5px;
+            font-size: 20px;
+            resize: none;
+            color: black;
+        }
+    </style>
+    <!-- <script>
+        function gcd(a, b) {
+            while (b !== 0) {
+                const temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return { a, b };
+        }
+
+        function calculateGCD() {
+            const num1 = parseInt(document.getElementById("num1").value);
+            const num2 = parseInt(document.getElementById("num2").value);
+            const result = gcd(num1, num2);
+
+            document.getElementById("result").textContent = "ห.ร.ม. ของ " + num1 + " และ " + num2 + " คือ " + result;
+
+
+
+            // เพิ่มส่วนนี้เพื่อแนบค่า num1 และ num2 ลงใน textarea
+            const howtoTextarea = document.getElementById("howto");
+            const temp = gcd(num1, num2); // คำนวณค่า tempจากการเรียกใช้ gcd()
+            const { a, b } = gcd(num1, num2); // ดึงค่า a และ b จากฟังก์ชัน gcdDetails()
+            const howto = 
+                "ค่า ตัวเลขที่ 1: " + num1 + "\n" +
+                "ค่า ตัวเลขที่ 2: " + num2 + "\n" + "\n" + 
+                "นำมาตั้งหารสั้น จะได้" + "\n" +
+                "   " +  + ")____" + num1 + "____" + num2;
+
+            howtoTextarea.value = howto;
+        }
+        
+    
+        function clearInputs() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("result").textContent = "";
+            document.getElementById("howto").value = ""; // เพิ่มส่วนนี้เพื่อล้างค่าใน textarea
+        }
+    </script>
+</head>
+<body style="text-align: center;">
+    <div class = "container">
+        <div class = "d-grid gap-2">
+    <h1 style="color: rgb(0, 0, 0); text-align: center; font-size: 50px;">GCD Calculator 2 ตัว</h1>
+    <label for="num1" style="color: rgb(13, 0, 255); text-align: center; font-size: 25px;">ป้อนตัวเลขที่หนึ่ง:</label>
+    <input type="number" id="num1"><br>
+
+    <label for="num2" style="color: rgb(13, 0, 255); text-align: center; font-size: 25px;">ป้อนตัวเลขที่สอง:</label>
+    <input type="number" id="num2"><br>
+
+    <p id="result"></p>
+    
+    
+    <button onclick="calculateGCD()">คำนวณ ห.ร.ม.</button>
+    <button onclick="clearInputs()">ล้างค่า</button>
+
+    <form action="#">
+        <fieldset>
+            <legend>วิธีการทำ</legend>
+            <textarea name="howto" id="howto" cols="60" rows="5">
+            </textarea>
+        </fieldset>
+    </form>
+
+    <button onclick="window.history.back()" style="font-size: 20px;"class="btn btn-outline-dark">ย้อนกลับหน้าหลัก</button>
+</div>
+</div>
+</body> -->
+</html>
+<body style="text-align: center;">
+    <div class="container">
+        <div class="d-grid gap-2">
+            <h1 style="color: rgb(0, 0, 0); text-align: center; font-size: 50px;">GCD Calculator 2 ตัว</h1>
+            <label for="num1" style="color: rgb(13, 0, 255); text-align: center; font-size: 25px;">ป้อนตัวเลขที่หนึ่ง:</label>
+            <input type="number" id="num1"><br>
+
+            <label for="num2" style="color: rgb(13, 0, 255); text-align: center; font-size: 25px;">ป้อนตัวเลขที่สอง:</label>
+            <input type="number" id="num2"><br>
+
+            <p id="result"></p>
+
+            <button onclick="calculateGCD()">คำนวณ ห.ร.ม.</button>
+            <button onclick="clearInputs()">ล้างค่า</button>
+
+            <form action="#">
+                <fieldset>
+                    <legend>วิธีการทำ</legend>
+                    <textarea name="howto" id="howto" cols="60" rows="5">
+                    </textarea>
+                </fieldset>
+            </form>
+
+            <button onclick="window.history.back()" style="font-size: 20px;" class="btn btn-outline-dark">ย้อนกลับหน้าหลัก</button>
+        </div>
+    </div>
+
+    <script>
+        function gcd(a, b) {
+            while (b !== 0) {
+                const temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return { a, b };
+        }
+
+        function calculateGCD() {
+            const num1 = parseInt(document.getElementById("num1").value);
+            const num2 = parseInt(document.getElementById("num2").value);
+            const result = gcd(num1, num2);
+
+            document.getElementById("result").textContent = "ห.ร.ม. ของ " + num1 + " และ " + num2 + " คือ " + result.a;
+
+            // สร้างข้อความวิธีการทำ
+            const howtoTextarea = document.getElementById("howto");
+            let a = num1;
+            let b = num2;
+            let steps = "";
+            
+            while (b !== 0) {
+                steps += `นำ ${a} มาตั้งหารจะได้: ${a}÷${b} หารด้วย = ${Math.floor(a / b)} ผลลัพท์คือ ${a % b}\n`;
+                const temp = b;
+                b = a % b;
+                a = temp;
+            }
+
+            const howto = `ค่า ตัวเลขที่ 1: ${num1}\nค่า ตัวเลขที่ 2: ${num2}\n\n${steps} ดังนั้น ห.ร.ม ของ ${num1} และ ${num2} คือ ${result.a}`;
+            howtoTextarea.value = howto;
+        }
+        
+        function clearInputs() {
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("result").textContent = "";
+            document.getElementById("howto").value = "";
+        }
+    </script>
+</body>
+</html>

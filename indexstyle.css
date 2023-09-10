@@ -1,0 +1,51 @@
+body{
+    font-family: 'Mitr', sans-serif;
+}
+@media (max-width: 576px) {
+    /* เพิ่มระยะห่างให้กับปุ่ม */
+    .btn {
+      margin-bottom: 10px;
+    }
+
+h2{
+    text-align: center;
+    color: rgb(242, 172, 172);
+    font-size: 50px;
+    font-weight: bold;
+}
+h3{
+    text-align: center;
+    font-size: 25px;
+    color: blue;
+    
+}
+h4{
+    text-align: center;
+    font-size: 15px;
+    color: darkmagenta;
+    font-weight: bold;
+    
+
+}
+hr {
+    color: rgb(255, 0, 0);
+    width: 40%; /* กำหนดความกว้างเป็น 50% */
+    margin: 20px auto; /* ตรงกลาง */
+}
+.container {
+    border: 2px;
+    padding: 25px;
+    margin-top: 20px;
+    max-width: 350px;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+}
+
+span{
+    color: orange;
+    text-shadow: 3px 3px 20px rgb(205, 196, 127);
+}
+div{
+    border-radius: 40px
+}
+}
+    

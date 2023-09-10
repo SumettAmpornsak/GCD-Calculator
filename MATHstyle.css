@@ -1,0 +1,42 @@
+body{
+    font-family: 'Mitr', sans-serif;
+}
+/* ปรับแต่งสไตล์สำหรับหน้าจอขนาดเล็ก (Mobile) */
+@media (max-width: 576px) {
+    /* เพิ่มระยะห่างให้กับปุ่ม */
+    .btn {
+      margin-bottom: 10px;
+    }
+ /* ปรับแต่งขนาดตัวอักษรให้เหมาะสม */
+h2, h3 {
+    font-size: 20px;
+  }
+  
+  /* ปรับแต่งขนาดของคอนเทนเนอร์ให้กว้างเต็ม */
+  .container {
+    padding: 15px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: none;
+  }
+/* ปรับแต่งขนาดของกล่องเพื่อให้มีเส้นขอบโค้ง */
+div {
+    border-radius: 30px;
+  }
+}
+/* ปรับแต่งสไตล์สำหรับหน้าจอขนาดใหญ่ (Desktop) */
+@media (min-width: 992px) {
+    /* ปรับแต่งขนาดคอนเทนเนอร์ให้กว้างเท่ากับ max-width ที่กำหนดไว้ */
+    .container {
+      padding: 25px;
+      margin-top: 10px;
+      border: 90px;
+      box-shadow: 0 0 90px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* ปรับแต่งขนาดของกล่องเพื่อให้มีเส้นขอบโค้ง */
+    div {
+      border-radius: 60px;
+    }
+  }
+    
